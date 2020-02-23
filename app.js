@@ -122,7 +122,14 @@ function writeToJsonFile(employee) {
 function generateHTML(employee) {
      var app = express();
      app.engine('handlebars', exphbs());
-     app.set('view engine', 'handlebars');
+     app.set('view engine', 'hbs');
+
+     //Using hbs as the default view engine requires just one line of code in your app setup. This will render .hbs files when res.render is called.
+    // app.set('view engine', 'hbs');
+
+    // To use a different extension (i.e. html) for your template files:
+    //app.set('view engine', 'html');
+    //app.engine('html', require('hbs').__express);
 
      app.get('/', function (req, res) {
           res.render('home', {

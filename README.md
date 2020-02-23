@@ -7,7 +7,7 @@ node index.js
 
 Generated Html file can be viewed on localhost:3000
 
-![Alt Text](./Assets/screen.png)
+![Alt Text](./Assets/Screen.png)
 
 
 
